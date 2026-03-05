@@ -48,8 +48,51 @@ API untuk manajemen tugas (task management) yang dibangun dengan Laravel 12, men
 
 API akan tersedia di `http://localhost:8000/api`
 
-## �📋 Table of Contents
-- [Quick Setup](#-quick-setup)- [Base URL](#-base-url)
+## 📁 Project Structure
+
+```
+backend-task-management/
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   │   ├── AuthController.php          # JWT Auth endpoints
+│   │   │   ├── TaskController.php          # CRUD Task operations
+│   │   │   └── MasterStatusController.php  # Master Status API
+│   │   ├── Requests/
+│   │   │   ├── LoginRequest.php            # Login validation
+│   │   │   ├── RegisterRequest.php         # Register validation
+│   │   │   └── TaskRequest.php             # Task CRUD validation
+│   │   └── Resources/
+│   │       ├── UserResource.php            # User API response format
+│   │       ├── TaskResource.php            # Task API response format
+│   │       └── MasterStatusResource.php    # Status API response format
+│   ├── Models/
+│   │   ├── User.php                        # User model with JWT
+│   │   ├── Task.php                        # Task model with relationships
+│   │   └── MasterStatus.php                # Master Status model
+│   └── Providers/
+│       └── AppServiceProvider.php
+├── database/
+│   ├── migrations/
+│   │   ├── 2026_03_04_080823_create_users_table.php
+│   │   ├── 2026_03_04_080830_create_master_status_table.php
+│   │   ├── 2026_03_04_080838_create_tasks_table.php
+│   │   └── 0001_01_01_000001_create_cache_table.php
+│   └── seeders/
+│       ├── DatabaseSeeder.php
+│       └── MasterStatusSeeder.php          # Default status data
+├── routes/
+│   └── web.php                             # API routes definition
+├── .env.example                            # Environment template
+├── .gitignore                              # Git exclusion rules
+└── README.md                               # This documentation
+```
+
+## 📋 Table of Contents
+
+- [Quick Setup](#-quick-setup)
+- [Project Structure](#-project-structure)
+- [Base URL](#-base-url)
 - [Auth Endpoints](#-auth-endpoints)
 - [Master Status Endpoints](#-master-status-endpoints)
 - [Task Endpoints](#-task-endpoints)
