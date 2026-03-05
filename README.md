@@ -132,8 +132,7 @@ http://localhost:8000/api
 ```json
 {
     "success": true,
-    "message": "Registrasi berhasil.",
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9..."
+    "message": "Registrasi berhasil."
 }
 ```
 
