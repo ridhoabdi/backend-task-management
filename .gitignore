@@ -1,0 +1,63 @@
+*.log
+.DS_Store
+.env
+.env.backup
+.env.production
+.env.local
+.env.testing
+.phpactor.json
+.phpunit.result.cache
+/.fleet
+/.idea
+/.nova
+/.phpunit.cache
+/.vscode
+/.zed
+/auth.json
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+/storage/app/private/*
+/storage/app/public/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*
+/storage/logs/*
+/bootstrap/cache/*.php
+/vendor
+composer.lock
+package-lock.json
+yarn.lock
+Homestead.json
+Homestead.yaml
+Thumbs.db
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Database
+*.sqlite
+*.sqlite3
+
+# IDE files
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# JWT Secret (jika ada file terpisah)
+jwt.key
+jwt.pub
+
+# Backup files
+*.bak
+*.tmp
